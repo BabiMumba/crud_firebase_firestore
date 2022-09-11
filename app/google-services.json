@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "763664921316",
+    "project_id": "crudfirestore-65797",
+    "storage_bucket": "crudfirestore-65797.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763664921316:android:77e8e2334e39b5fbe2b2f1",
+        "android_client_info": {
+          "package_name": "com.bstonetech.achatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763664921316-4fl2o66h108q39eoaf43giccuf6h72c1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bstonetech.achatapp",
+            "certificate_hash": "209834108b83db17f270d06aadc0ffa5c4916357"
+          }
+        },
+        {
+          "client_id": "763664921316-jb0olitn07idoobc0uedggub1ik5dgjj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCCsOlq82U7sNT2Zd9impMCESFRr4ojjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763664921316-jb0olitn07idoobc0uedggub1ik5dgjj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
