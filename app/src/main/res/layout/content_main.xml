@@ -129,7 +129,7 @@
 
                         </net.colindodd.gradientlayout.GradientRelativeLayout>
                     </androidx.cardview.widget.CardView>
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="15dp"
@@ -156,7 +156,7 @@
 
 
                         </net.colindodd.gradientlayout.GradientRelativeLayout>
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
@@ -168,7 +168,7 @@
                     android:orientation="vertical">
 
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="15dp"
@@ -195,8 +195,8 @@
                                 style="@style/viewParent.headerText.HomeCardTitle" />
 
                         </net.colindodd.gradientlayout.GradientRelativeLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="15dp"
@@ -224,8 +224,8 @@
 
 
                         </net.colindodd.gradientlayout.GradientRelativeLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="15dp"
@@ -252,8 +252,8 @@
                                 style="@style/viewParent.headerText.HomeCardTitle" />
 
                         </net.colindodd.gradientlayout.GradientRelativeLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="15dp"
@@ -280,7 +280,7 @@
 
 
                         </net.colindodd.gradientlayout.GradientRelativeLayout>
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </LinearLayout>
 
