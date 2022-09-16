@@ -2,4 +2,8 @@
    <color name="contentBodyColor">#000</color>
     <color name="contentTextColor">#fff</color>
     <color name="miniTitle">#fff</color>
+    <color name="bottomNavigationBackground">#000</color>
+    <color name="miniTitleColor">#fff</color>
+    <color name="contentStatusBar">#000</color>
+
 </resources>

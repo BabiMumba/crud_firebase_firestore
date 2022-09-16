@@ -2,9 +2,7 @@ package com.bstonetech.achatapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.bstonetech.achatapp.DarkModePrefManager
 import androidx.appcompat.app.AppCompatDelegate
-import com.bstonetech.achatapp.R
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.widget.CompoundButton
@@ -14,7 +12,7 @@ import android.widget.TextView
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (DarkModePrefManager(this).isNightMode) {
+        if (DarkModePref(this).isNightMode) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
         }
         setContentView(R.layout.activity_settings)
@@ -31,9 +29,9 @@ class SettingsActivity : AppCompatActivity() {
     private fun setDarkModeSwitch() {
         @SuppressLint("UseSwitchCompatOrMaterialCode") val darkModeSwitch =
             findViewById<Switch>(R.id.darkModeSwitch)
-        darkModeSwitch.isChecked = DarkModePrefManager(this).isNightMode
+        darkModeSwitch.isChecked = DarkModePref(this).isNightMode
         darkModeSwitch.setOnCheckedChangeListener { buttonView: CompoundButton?, isChecked: Boolean ->
-            val darkModePrefManager = DarkModePrefManager(this@SettingsActivity)
+            val darkModePrefManager = DarkModePref(this@SettingsActivity)
             darkModePrefManager.setDarkMode(!darkModePrefManager.isNightMode)
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             recreate()
