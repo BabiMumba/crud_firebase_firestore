@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bstonetech.achatapp.R
 import com.bstonetech.achatapp.model.BookModel
@@ -19,7 +20,13 @@ class BookAdapter(var context: Context, var arrayList: ArrayList<BookModel>):  R
     }
 
     override fun onBindViewHolder(holder: itemHolder, position: Int) {
-        TODO("Not yet implemented")
+        var bookModel:BookModel = arrayList.get(position)
+        holder.icone.setImageResource(bookModel.icon!!)
+        holder.title.text = bookModel.titre
+        holder.icone.setOnClickListener {
+            Toast.makeText(context, bookModel.titre, Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     override fun getItemCount(): Int {
