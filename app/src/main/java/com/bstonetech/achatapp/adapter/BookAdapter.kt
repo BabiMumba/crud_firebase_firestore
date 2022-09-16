@@ -1,6 +1,7 @@
 package com.bstonetech.achatapp.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bstonetech.achatapp.R
+import com.bstonetech.achatapp.SettingsActivity
 import com.bstonetech.achatapp.model.BookModel
 import org.w3c.dom.Text
 
@@ -24,7 +26,15 @@ class BookAdapter(var context: Context, var arrayList: ArrayList<BookModel>):  R
         holder.icone.setImageResource(bookModel.icon!!)
         holder.title.text = bookModel.titre
         holder.icone.setOnClickListener {
-            Toast.makeText(context, bookModel.titre, Toast.LENGTH_SHORT).show()
+            if (position==0){
+
+                val inten = Intent(context,SettingsActivity::class.java)
+                context.startActivities(arrayOf(inten))
+
+            }else{
+                Toast.makeText(context, bookModel.titre.toString(), Toast.LENGTH_SHORT).show()
+            }
+
         }
 
     }

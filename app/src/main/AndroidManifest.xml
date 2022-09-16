@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".SettingsActivity"
+            android:name=".AchatActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true">
             <intent-filter>
@@ -27,7 +27,7 @@
         </activity>
 
         <activity
-            android:name=".AchatActivity"
+            android:name=".SettingsActivity"
             android:exported="true">
 
         </activity>
