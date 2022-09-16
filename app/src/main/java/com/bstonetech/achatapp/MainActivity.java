@@ -28,28 +28,24 @@ public class MainActivity extends AppCompatActivity
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment fragment;
-            switch (item.getItemId()) {
-                case R.id.navigationMyProfile:
-                    return true;
-                case R.id.navigationMyCourses:
-                    return true;
-                case R.id.navigationHome:
-                    return true;
-                case  R.id.navigationSearch:
-                    return true;
-                case  R.id.navigationMenu:
-                    DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-                    drawer.openDrawer(GravityCompat.START);
-                    return true;
-            }
-            return false;
-        }
-    };
+            = item -> {
+                Fragment fragment;
+                switch (item.getItemId()) {
+                    case R.id.navigationMyProfile:
+                        return true;
+                    case R.id.navigationMyCourses:
+                        return true;
+                    case R.id.navigationHome:
+                        return true;
+                    case  R.id.navigationSearch:
+                        return true;
+                    case  R.id.navigationMenu:
+                        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+                        drawer.openDrawer(GravityCompat.START);
+                        return true;
+                }
+                return false;
+            };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
