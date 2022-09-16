@@ -7,5 +7,5 @@ class BookModel {
     constructor(icon: Int?, tittre: String?) {
         this.icon = icon
         this.tittre = tittre
-    }g
+    }
 }
