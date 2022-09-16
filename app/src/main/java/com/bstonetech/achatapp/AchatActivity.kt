@@ -39,7 +39,6 @@ class AchatActivity : AppCompatActivity() {
         items.add(BookModel(R.drawable.dissatisfaction,"codage"))
         items.add(BookModel(R.drawable.education,"codage"))
         items.add(BookModel(R.drawable.eng,"codage"))
-        items.add(BookModel(R.drawable.fifi,"codage"))
         items.add(BookModel(R.drawable.fina1,"codage"))
         items.add(BookModel(R.drawable.fina2,"codage"))
         items.add(BookModel(R.drawable.function,"codage"))
@@ -57,6 +56,7 @@ class AchatActivity : AppCompatActivity() {
         items.add(BookModel(R.drawable.open_book,"codage"))
         items.add(BookModel(R.drawable.other_book,"codage"))
         items.add(BookModel(R.drawable.religion,"codage"))
+
         return items
     }
 }
