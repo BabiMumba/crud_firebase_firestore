@@ -6,8 +6,10 @@ import com.bstonetech.achatapp.DarkModePrefManager
 import androidx.appcompat.app.AppCompatDelegate
 import com.bstonetech.achatapp.R
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.widget.CompoundButton
 import android.widget.Switch
+import android.widget.TextView
 
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +20,12 @@ class SettingsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_settings)
         //function for enabling dark mode
         setDarkModeSwitch()
+        var prof = findViewById<TextView>(R.id.prodile)
+        prof.setOnClickListener {
+            Intent(this,AchatActivity::class.java).also {
+                startActivity(it)
+            }
+        }
     }
 
     private fun setDarkModeSwitch() {

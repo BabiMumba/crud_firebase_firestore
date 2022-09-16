@@ -28,9 +28,7 @@ class BookAdapter(var context: Context, var arrayList: ArrayList<BookModel>):  R
         holder.icone.setOnClickListener {
             if (position==0){
 
-                val inten = Intent(context,SettingsActivity::class.java)
-                context.startActivities(arrayOf(inten))
-
+                Toast.makeText(context, bookModel.titre.toString(), Toast.LENGTH_SHORT).show()
             }else{
                 Toast.makeText(context, bookModel.titre.toString(), Toast.LENGTH_SHORT).show()
             }
