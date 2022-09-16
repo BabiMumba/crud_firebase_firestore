@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".AchatActivity">
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         tools:listitem="@layout/row_grid_view"
