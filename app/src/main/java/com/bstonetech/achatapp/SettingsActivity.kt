@@ -19,11 +19,18 @@ class SettingsActivity : AppCompatActivity() {
         //function for enabling dark mode
         setDarkModeSwitch()
         var prof = findViewById<TextView>(R.id.prodile)
+        val home = findViewById<TextView>(R.id.passe)
+        home.setOnClickListener {
+            Intent(this,MainActivity::class.java).also {
+                startActivity(it)
+            }
+        }
         prof.setOnClickListener {
             Intent(this,AchatActivity::class.java).also {
                 startActivity(it)
             }
         }
+
     }
 
     private fun setDarkModeSwitch() {

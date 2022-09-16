@@ -71,6 +71,7 @@
             android:text="Edit Profile" />
 
         <TextView
+            android:id="@+id/passe"
             style="@style/viewParent.headerText.settingsTextIcon"
             android:drawableLeft="@drawable/ic_edit_password"
             android:layout_marginTop="10dp"

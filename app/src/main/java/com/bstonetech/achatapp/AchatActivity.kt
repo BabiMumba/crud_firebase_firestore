@@ -55,8 +55,6 @@ class AchatActivity : AppCompatActivity() {
         items.add(BookModel(R.drawable.innovation,"codage"))
         items.add(BookModel(R.drawable.codage,"codage"))
         items.add(BookModel(R.drawable.rober,"codage"))
-
-
         items.add(BookModel(R.drawable.rober,"codage"))
         items.add(BookModel(R.drawable.rober,"codage"))
         items.add(BookModel(R.drawable.rober,"codage"))
