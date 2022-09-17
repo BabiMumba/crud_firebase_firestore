@@ -5,16 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.navigation.NavigationView
 import android.annotation.SuppressLint
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.bstonetech.achatapp.R
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.core.view.GravityCompat
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.coordinatorlayout.widget.CoordinatorLayout
-import com.bstonetech.achatapp.BottomNavigationBehavior
-import com.bstonetech.achatapp.DarkModePref
 import androidx.appcompat.app.AppCompatDelegate
-import com.bstonetech.achatapp.MainActivity
 import android.os.Build
 import android.view.MenuItem
 import android.view.View
@@ -24,7 +20,7 @@ import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     @SuppressLint("NonConstantResourceId")
     private val mOnNavigationItemSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener label@{ item: MenuItem ->
@@ -55,6 +51,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setDarkMode(window)
         setContentView(R.layout.activity_main)
+
         val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
         val drawer = findViewById<View>(R.id.drawer_layout) as DrawerLayout

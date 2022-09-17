@@ -21,7 +21,7 @@ class SettingsActivity : AppCompatActivity() {
         var prof = findViewById<TextView>(R.id.prodile)
         val home = findViewById<TextView>(R.id.passe)
         home.setOnClickListener {
-            Intent(this,MainActivity::class.java).also {
+            Intent(this,HomeActivity::class.java).also {
                 startActivity(it)
             }
         }
