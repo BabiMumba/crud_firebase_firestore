@@ -21,12 +21,14 @@
             gl:start_color="@color/gradientLightYellow">
 
             <ImageView
+                android:id="@+id/image"
                 style="@style/homeCardImage"
                 android:maxHeight="90dp"
                 android:src="@drawable/home_ic_physics" />
 
             <TextView
-                android:id="@+id/textViewSub2Title"
+
+                android:id="@+id/titre"
                 style="@style/viewParent.headerText.HomeCardTitle"
                 android:text="Physics" />
 

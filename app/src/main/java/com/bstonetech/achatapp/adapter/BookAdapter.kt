@@ -17,7 +17,7 @@ import org.w3c.dom.Text
 class BookAdapter(var context: Context, var arrayList: ArrayList<BookModel>):  RecyclerView.Adapter<BookAdapter.itemHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): itemHolder{
-        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.row_grid_view,parent,false)
+        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.new_grid_view,parent,false)
         return itemHolder(itemHolder)
     }
 
@@ -41,8 +41,8 @@ class BookAdapter(var context: Context, var arrayList: ArrayList<BookModel>):  R
         return arrayList.size
     }
     class itemHolder(itemview: View):RecyclerView.ViewHolder(itemview){
-        var icone:ImageView = itemview.findViewById(R.id.icons_image)
-        var title:TextView = itemview.findViewById(R.id.title)
+        var icone:ImageView = itemview.findViewById(R.id.image)
+        var title:TextView = itemview.findViewById(R.id.titre)
 
     }
 
