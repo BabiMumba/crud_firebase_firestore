@@ -17,7 +17,7 @@ import org.w3c.dom.Text
 class BookAdapter(var context: Context, var arrayList: ArrayList<BookModel>):  RecyclerView.Adapter<BookAdapter.itemHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): itemHolder{
-        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.new_grid_view,parent,false)
+        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.my_grid_view,parent,false)
         return itemHolder(itemHolder)
     }
 
