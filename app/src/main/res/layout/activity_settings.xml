@@ -99,9 +99,10 @@
             android:text="Cars" />
 
         <TextView
+            android:id="@+id/internet"
             style="@style/viewParent.headerText.settingsTextIcon"
             android:drawableLeft="@drawable/ic_logout"
-            android:text="Logout" />
+            android:text="Internet" />
 
 
         <TextView

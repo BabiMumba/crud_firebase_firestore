@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
         tools:replace="android:allowBackup"
         android:allowBackup="true"
@@ -30,21 +31,21 @@
 
         <activity
             android:name=".AchatActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:theme="@style/AppTheme.NoActionBar"
             android:name=".HomeActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:screenOrientation="fullSensor"
             android:theme="@style/AppTheme.NoActionBar"
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".InternetDialogActivity"
+            android:exported="true"
+            />
 
     </application>
 

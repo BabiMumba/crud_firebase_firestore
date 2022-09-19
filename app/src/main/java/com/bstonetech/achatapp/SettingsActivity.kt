@@ -21,6 +21,7 @@ class SettingsActivity : AppCompatActivity() {
         var prof = findViewById<TextView>(R.id.prodile)
         val home = findViewById<TextView>(R.id.passe)
         val home_card = findViewById<TextView>(R.id.home_card)
+        val internet = findViewById<TextView>(R.id.home_card)
         home.setOnClickListener {
             Intent(this,HomeActivity::class.java).also {
                 startActivity(it)
@@ -33,6 +34,11 @@ class SettingsActivity : AppCompatActivity() {
         }
         home_card.setOnClickListener {
             Intent(this,MainActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+        internet.setOnClickListener {
+            Intent(this,InternetDialogActivity::class.java).also {
                 startActivity(it)
             }
         }
