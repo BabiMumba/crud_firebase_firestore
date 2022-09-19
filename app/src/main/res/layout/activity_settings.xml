@@ -68,14 +68,14 @@
             android:id="@+id/prodile"
             style="@style/viewParent.headerText.settingsTextIcon"
             android:drawableLeft="@drawable/ic_edit_profile"
-            android:text="Edit Profile" />
+            android:text="ma page" />
 
         <TextView
             android:id="@+id/passe"
             style="@style/viewParent.headerText.settingsTextIcon"
             android:drawableLeft="@drawable/ic_edit_password"
             android:layout_marginTop="10dp"
-            android:text="Change Password" />
+            android:text="Home" />
 
         <TextView
             style="@style/viewParent.headerText.settingsMiniTitle"
@@ -85,7 +85,8 @@
             style="@style/settingsText"
             android:checked="true"
             android:drawableLeft="@drawable/ic_notifications"
-            android:text="Notifications" />
+            android:text="Notifications"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <TextView
             style="@style/viewParent.headerText.settingsMiniTitle"
@@ -95,7 +96,7 @@
             android:id="@+id/home_card"
             style="@style/viewParent.headerText.settingsTextIcon"
             android:drawableLeft="@drawable/ic_languages"
-            android:text="Language" />
+            android:text="Cars" />
 
         <TextView
             style="@style/viewParent.headerText.settingsTextIcon"
