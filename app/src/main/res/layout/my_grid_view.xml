@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/calibri"
-            android:text="2019 • COMFORT CLASS"
+            android:text="Robert kiyosaki"
             android:textColor="#a4a7b5"
             android:textSize="14sp" />
 
@@ -142,7 +142,7 @@
                 android:background="@drawable/blue_rounded_shape"
                 android:fontFamily="@font/calibri"
                 android:padding="8dp"
-                android:text="Book Now"
+                android:text="View"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
 
