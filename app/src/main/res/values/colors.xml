@@ -24,7 +24,6 @@
     <color name="whiteBodyColor">#FCFCFC</color>
     <color name="darkTextColor">#020000</color>
     <color name="primaryTextColor">#019AE8</color>
-    <color name="whiteTextColor">#fff</color>
     <color name="frutorial_title">#4c4c4c</color>
 
     <!--colors for light mode-->
@@ -49,4 +48,10 @@
     <color name="cardColorYellow">#FF991F</color>
     <color name="cardColorViolet">#8F51E3</color>
     <color name="cardColorRed">#F94172</color>
+
+
+    <color name="df_transparent_black_background">#80000000</color>
+    <color name="whiteCardColor">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="blackTextColor">#000</color>
 </resources>
