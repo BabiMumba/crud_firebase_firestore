@@ -22,7 +22,7 @@ class AchatActivity : AppCompatActivity() {
         setContentView(R.layout.activity_achat)
 
         recyclerview = findViewById(R.id.my_recler_view)
-        gridLayoutManager = GridLayoutManager(applicationContext,3,LinearLayoutManager.VERTICAL,false)
+        gridLayoutManager = GridLayoutManager(applicationContext,1,LinearLayoutManager.VERTICAL,false)
         recyclerview?.layoutManager = gridLayoutManager
         recyclerview?.setHasFixedSize(true)
         arrayList = ArrayList()
