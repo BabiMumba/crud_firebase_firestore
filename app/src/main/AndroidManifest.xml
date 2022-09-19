@@ -37,6 +37,13 @@
             android:exported="true">
 
         </activity>
+        <activity
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+
     </application>
 
 </manifest>

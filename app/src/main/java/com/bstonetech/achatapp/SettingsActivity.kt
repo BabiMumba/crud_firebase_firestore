@@ -20,6 +20,7 @@ class SettingsActivity : AppCompatActivity() {
         setDarkModeSwitch()
         var prof = findViewById<TextView>(R.id.prodile)
         val home = findViewById<TextView>(R.id.passe)
+        val home_card = findViewById<TextView>(R.id.home_card)
         home.setOnClickListener {
             Intent(this,HomeActivity::class.java).also {
                 startActivity(it)
@@ -30,6 +31,12 @@ class SettingsActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+        home_card.setOnClickListener {
+            Intent(this,MainActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
 
     }
 

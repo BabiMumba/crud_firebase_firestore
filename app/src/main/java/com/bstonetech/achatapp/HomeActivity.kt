@@ -20,6 +20,7 @@ import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 
+@Suppress("DEPRECATION")
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     @SuppressLint("NonConstantResourceId")
     private val mOnNavigationItemSelectedListener =
