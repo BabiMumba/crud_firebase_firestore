@@ -19,6 +19,7 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
+import com.bstonetech.achatapp.mode_theme.DarkModePref
 
 @Suppress("DEPRECATION")
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {

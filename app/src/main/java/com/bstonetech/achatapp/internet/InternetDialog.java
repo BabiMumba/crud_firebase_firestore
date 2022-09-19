@@ -1,4 +1,4 @@
- package com.bstonetech.achatapp;
+ package com.bstonetech.achatapp.internet;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -6,7 +6,9 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.view.View;
 
-/**
+import com.bstonetech.achatapp.R;
+
+ /**
  * Created by kapil on 03/11/18.
  */
 

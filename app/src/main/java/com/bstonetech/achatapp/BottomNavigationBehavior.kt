@@ -8,9 +8,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import android.widget.FrameLayout
 import androidx.core.view.ViewCompat
 
-/**
- * Created by kapil on 05/10/18.
- */
+
 class BottomNavigationBehavior : CoordinatorLayout.Behavior<BottomNavigationView> {
     constructor() : super() {}
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs) {}
@@ -47,11 +45,9 @@ class BottomNavigationBehavior : CoordinatorLayout.Behavior<BottomNavigationView
             hideBottomNavigationView(child)
         }
     }
-
     private fun hideBottomNavigationView(view: BottomNavigationView) {
         view.animate().translationY(view.height.toFloat())
     }
-
     private fun showBottomNavigationView(view: BottomNavigationView) {
         view.animate().translationY(0f)
     }

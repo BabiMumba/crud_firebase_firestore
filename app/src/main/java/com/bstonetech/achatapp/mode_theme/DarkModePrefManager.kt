@@ -1,4 +1,4 @@
-package com.bstonetech.achatapp
+package com.bstonetech.achatapp.mode_theme
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -6,7 +6,7 @@ import android.content.SharedPreferences
 /**
  * Created by kapil on 20/01/17.
  */
-class DarkModePref(var _context: Context) {
+class DarkModePrefManager(var _context: Context) {
     var pref: SharedPreferences
     var editor: SharedPreferences.Editor
 

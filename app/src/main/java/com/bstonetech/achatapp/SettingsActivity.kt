@@ -8,6 +8,8 @@ import android.content.Intent
 import android.widget.CompoundButton
 import android.widget.Switch
 import android.widget.TextView
+import com.bstonetech.achatapp.internet.InternetDialogActivity
+import com.bstonetech.achatapp.mode_theme.DarkModePref
 
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +23,7 @@ class SettingsActivity : AppCompatActivity() {
         var prof = findViewById<TextView>(R.id.prodile)
         val home = findViewById<TextView>(R.id.passe)
         val home_card = findViewById<TextView>(R.id.home_card)
-        val internet = findViewById<TextView>(R.id.home_card)
+        val internet = findViewById<TextView>(R.id.internet)
         home.setOnClickListener {
             Intent(this,HomeActivity::class.java).also {
                 startActivity(it)
@@ -38,7 +40,8 @@ class SettingsActivity : AppCompatActivity() {
             }
         }
         internet.setOnClickListener {
-            Intent(this,InternetDialogActivity::class.java).also {
+            Intent(this,
+                InternetDialogActivity::class.java).also {
                 startActivity(it)
             }
         }

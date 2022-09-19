@@ -1,10 +1,12 @@
-package com.bstonetech.achatapp;
+package com.bstonetech.achatapp.internet;
 
 
 import android.os.Bundle;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.bstonetech.achatapp.R;
 
 public class InternetDialogActivity extends AppCompatActivity {
 
