@@ -25,7 +25,7 @@ class SettingsActivity : AppCompatActivity() {
         val home_card = findViewById<TextView>(R.id.home_card)
         val internet = findViewById<TextView>(R.id.internet)
         home.setOnClickListener {
-            Intent(this,HomeActivity::class.java).also {
+            Intent(this,MainActivity::class.java).also {
                 startActivity(it)
             }
         }

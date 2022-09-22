@@ -31,6 +31,9 @@
             android:name=".AchatActivity"
             android:exported="true"/>
         <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
             android:theme="@style/AppTheme.NoActionBar"
             android:name=".HomeActivity"
             android:exported="true"/>
