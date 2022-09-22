@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/github"
+        android:icon="@drawable/ic_baseline_folder_24"
+        android:title="One" />
+    <item
+        android:id="@+id/code"
+        android:icon="@drawable/ic_baseline_folder_24"
+        android:title="Two" />
+
+    <item
+        android:id="@+id/paint"
+        android:icon="@drawable/ic_baseline_folder_24"
+        android:title="Three" />
+
+    <item
+        android:id="@+id/box"
+        android:icon="@drawable/ic_baseline_folder_24"
+        android:title="Four" />
+</menu>
