@@ -35,7 +35,7 @@ class SettingsActivity : AppCompatActivity() {
             }
         }
         home_card.setOnClickListener {
-            Intent(this,MainActivity::class.java).also {
+            Intent(this,MainActivity_Cars::class.java).also {
                 startActivity(it)
             }
         }

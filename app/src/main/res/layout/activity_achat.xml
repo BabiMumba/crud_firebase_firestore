@@ -14,7 +14,6 @@
         tools:listitem="@layout/my_grid_view"
         android:layout_height="wrap_content"
         android:id="@+id/my_recler_view"
-        android:padding="12dp"
         />
 
 </LinearLayout>
