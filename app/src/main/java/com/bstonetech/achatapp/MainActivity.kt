@@ -3,6 +3,7 @@ package com.bstonetech.achatapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.bstonetech.achatapp.fragment.FavoriteFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.Two -> {
-                    fragment = FragmentTwo()
+                    fragment = FavoriteFragment()
                     replaceFragment(fragment)
                     return@OnNavigationItemSelectedListener true
                 }
