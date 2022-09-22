@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="90"
                 android:fontFamily="@font/calibri"
-                android:text="@string/news_a"
+                android:text="@string/head_1"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -93,7 +93,7 @@
             android:layout_height="160dp"
             android:layout_marginBottom="8dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/bmw_car_img" />
+            android:src="@drawable/d" />
 
         <RelativeLayout
             android:layout_width="match_parent"
