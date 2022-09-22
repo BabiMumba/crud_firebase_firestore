@@ -1,5 +1,6 @@
 package com.bstonetech.achatapp.adapter
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -13,10 +14,14 @@ class NewAdapter(private val newslist: ArrayList<News>):RecyclerView.Adapter<New
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyviewHolder {
-        TODO("Not yet implemented")
+        val itemview = LayoutInflater.from(parent.context).inflate(R.layout.list_item,parent,false)
+        return MyviewHolder(itemview)
     }
 
     override fun onBindViewHolder(holder: MyviewHolder, position: Int) {
+        var currentitem = newslist[position]
+        holder.titleimage.setImageResource(currentitem.titleimage)
+        holder.tvheading.text = currentitem.heading
 
     }
 
