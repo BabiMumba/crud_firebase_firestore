@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bstonetech.achatapp.adapter.NewAdapter
 import com.bstonetech.achatapp.model.News
@@ -70,6 +71,19 @@ class HomeFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        datainitialize()
+        val layoutManager = LinearLayoutManager(context)
+        recyclerView=view.findViewById(R.id.recycler_view)
+        recyclerView.layoutManager = layoutManager
+        recyclerView.setHasFixedSize(true)
+        adapter = NewAdapter(newsarrayList)
+        recyclerView.adapter = adapter
     }
     private fun datainitialize(){
         newsarrayList = arrayListOf<News>()
@@ -98,5 +112,23 @@ class HomeFragment : Fragment() {
             getString(R.string.head_9),
             getString(R.string.head_10)
         )
+        news = arrayOf(
+            getString(R.string.news_a),
+            getString(R.string.news_b),
+            getString(R.string.news_c),
+            getString(R.string.news_d),
+            getString(R.string.news_e),
+            getString(R.string.news_f),
+            getString(R.string.news_g),
+            getString(R.string.news_h),
+            getString(R.string.news_i),
+            getString(R.string.news_j),
+
+        )
+
+        for (i in imageId.indices){
+            val news = News(imageId[i],heading[i])
+            newsarrayList.add(news)
+        }
     }
 }
