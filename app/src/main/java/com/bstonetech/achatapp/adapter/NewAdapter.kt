@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bstonetech.achatapp.model.News
 
-class NewAdapter(private val newslist: ArrayList<News>):RecyclerView.Adapter<NewAdapter.MyviewHolder> {
+class NewAdapter(private val newslist: ArrayList<News>):RecyclerView.Adapter<NewAdapter.MyviewHolder>() {
 
 
 
@@ -18,7 +18,7 @@ class NewAdapter(private val newslist: ArrayList<News>):RecyclerView.Adapter<New
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return newslist.size
     }
 
     class MyviewHolder(itemview:View):RecyclerView.ViewHolder(itemview){
