@@ -2,8 +2,11 @@ package com.bstonetech.achatapp.adapter
 
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bstonetech.achatapp.R
 import com.bstonetech.achatapp.model.News
+import com.google.android.material.imageview.ShapeableImageView
 
 class NewAdapter(private val newslist: ArrayList<News>):RecyclerView.Adapter<NewAdapter.MyviewHolder>() {
 
@@ -14,7 +17,7 @@ class NewAdapter(private val newslist: ArrayList<News>):RecyclerView.Adapter<New
     }
 
     override fun onBindViewHolder(holder: MyviewHolder, position: Int) {
-        TODO("Not yet implemented")
+
     }
 
     override fun getItemCount(): Int {
@@ -22,6 +25,8 @@ class NewAdapter(private val newslist: ArrayList<News>):RecyclerView.Adapter<New
     }
 
     class MyviewHolder(itemview:View):RecyclerView.ViewHolder(itemview){
+        var titleimage:ShapeableImageView = itemview.findViewById(R.id.title_image)
+        var tvheading:TextView = itemview.findViewById(R.id.tvHeading)
 
 
     }
