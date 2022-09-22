@@ -27,28 +27,16 @@
 
             <TextView
                 android:id="@+id/titre"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="90"
                 android:fontFamily="@font/calibri"
-                android:text="BMW X4 Sports"
+                android:text="@string/news_a"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="10"
-                android:background="@drawable/light_orange_rounded_shape"
-                android:drawableLeft="@drawable/ic_star_yellow_24dp"
-                android:fontFamily="@font/calibri"
-                android:padding="6dp"
-                android:text="4.5"
-                android:textAlignment="textEnd"
-                android:textColor="#ffc32d"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+
 
         </LinearLayout>
 

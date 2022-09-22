@@ -1,20 +1,25 @@
 package com.bstonetech.achatapp.adapter
 
+import android.app.Activity
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bstonetech.achatapp.HomeFragment
 import com.bstonetech.achatapp.R
 import com.bstonetech.achatapp.model.News
 import com.google.android.material.imageview.ShapeableImageView
 
-class NewAdapter(private val newslist: ArrayList<News>):RecyclerView.Adapter<NewAdapter.MyviewHolder>() {
+class NewAdapter(private val newslist: ArrayList<News>, private val context: Context?):RecyclerView.Adapter<NewAdapter.MyviewHolder>() {
 
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyviewHolder {
-        val itemview = LayoutInflater.from(parent.context).inflate(R.layout.list_item,parent,false)
+        val itemview = LayoutInflater.from(parent.context).inflate(R.layout.my_grid_view,parent,false)
         return MyviewHolder(itemview)
     }
 
@@ -22,6 +27,10 @@ class NewAdapter(private val newslist: ArrayList<News>):RecyclerView.Adapter<New
         var currentitem = newslist[position]
         holder.titleimage.setImageResource(currentitem.titleimage)
         holder.tvheading.text = currentitem.heading
+        holder.itemView.setOnClickListener {
+
+            Toast.makeText(context, "position :$position", Toast.LENGTH_SHORT).show()
+        }
 
     }
 
@@ -30,8 +39,8 @@ class NewAdapter(private val newslist: ArrayList<News>):RecyclerView.Adapter<New
     }
 
     class MyviewHolder(itemview:View):RecyclerView.ViewHolder(itemview){
-        var titleimage:ShapeableImageView = itemview.findViewById(R.id.title_image)
-        var tvheading:TextView = itemview.findViewById(R.id.tvHeading)
+        var titleimage:ImageView = itemview.findViewById(R.id.image)
+        var tvheading:TextView = itemview.findViewById(R.id.titre)
 
 
     }
