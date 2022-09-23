@@ -4,19 +4,15 @@
     <item
         android:id="@+id/One"
         android:icon="@drawable/ic_baseline_folder_24"
-        android:title="One" />
+        android:title="Menu" />
     <item
         android:id="@+id/Two"
         android:icon="@drawable/ic_baseline_folder_24"
-        android:title="Two" />
+        android:title="Booksstore" />
 
     <item
         android:id="@+id/Three"
         android:icon="@drawable/ic_baseline_folder_24"
-        android:title="Three" />
+        android:title="categorie" />
 
-    <item
-        android:id="@+id/Four"
-        android:icon="@drawable/ic_baseline_folder_24"
-        android:title="Four" />
 </menu>
