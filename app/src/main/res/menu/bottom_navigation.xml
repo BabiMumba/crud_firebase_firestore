@@ -12,7 +12,7 @@
 
     <item
         android:id="@+id/categorie"
-        android:icon="@drawable/bookmark"
+        android:icon="@drawable/ic_baseline_category_24"
         android:title="categorie" />
 
 </menu>

@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
-        replaceFragment(HomeFragment())
+        replaceFragment(FavoriteFragment())
     }
     private fun replaceFragment(fragment: Fragment){
         val fragmentManager = supportFragmentManager
@@ -27,12 +27,12 @@ class MainActivity : AppCompatActivity() {
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             val fragment: Fragment
             when (item.itemId) {
-                R.id.One -> {
+                R.id.menu -> {
                     fragment = HomeFragment()
                     replaceFragment(fragment)
                     return@OnNavigationItemSelectedListener true
                 }
-                R.id.Two -> {
+                R.id.bookstore -> {
                     fragment = FavoriteFragment()
                     replaceFragment(fragment)
                     return@OnNavigationItemSelectedListener true
