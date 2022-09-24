@@ -88,12 +88,13 @@
         </LinearLayout>
 
         <ImageView
+
             android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:layout_marginBottom="8dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/e" />
+            android:scaleType="fitXY"
+            android:src="@drawable/d" />
 
         <RelativeLayout
             android:layout_width="match_parent"
