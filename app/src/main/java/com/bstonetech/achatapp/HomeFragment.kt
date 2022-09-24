@@ -85,6 +85,12 @@ class HomeFragment : Fragment() {
         recyclerView.setHasFixedSize(true)
         adapter = NewAdapter(newsarrayList,context )
         recyclerView.adapter = adapter
+        adapter.setOnclickListener(object:NewAdapter.onItemClickListene{
+            override fun onItemClick(position: Int) {
+
+            }
+
+        })
     }
     private fun datainitialize(){
         newsarrayList = arrayListOf<News>()
@@ -128,6 +134,7 @@ class HomeFragment : Fragment() {
             getString(R.string.news_j),
 
         )
+
 
         for (i in imageId.indices){
             val news = News(imageId[i],heading[i])

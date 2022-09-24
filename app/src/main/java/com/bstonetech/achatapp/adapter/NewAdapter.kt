@@ -31,7 +31,7 @@ class NewAdapter(private val newslist: ArrayList<News>, private val context: Con
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyviewHolder {
         val itemview = LayoutInflater.from(parent.context).inflate(R.layout.my_grid_view,parent,false)
-        return MyviewHolder(itemview)
+        return MyviewHolder(itemview,mListener)
     }
 
     override fun onBindViewHolder(holder: MyviewHolder, position: Int) {
@@ -49,9 +49,15 @@ class NewAdapter(private val newslist: ArrayList<News>, private val context: Con
         return newslist.size
     }
 
-    class MyviewHolder(itemview:View):RecyclerView.ViewHolder(itemview){
+    class MyviewHolder(itemview:View, listener:onItemClickListene):RecyclerView.ViewHolder(itemview){
         var titleimage:ImageView = itemview.findViewById(R.id.image)
         var tvheading:TextView = itemview.findViewById(R.id.titre)
+
+        init {
+            listener.onItemClick(adapterPosition)
+        }
+
+
 
 
     }
