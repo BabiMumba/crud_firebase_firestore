@@ -17,7 +17,8 @@ import com.google.android.material.imageview.ShapeableImageView
 
 class NewAdapter(private val newslist: ArrayList<News>, private val context: Context?):RecyclerView.Adapter<NewAdapter.MyviewHolder>() {
 
-    private lateinit var mListener:onItemClickListene
+    /*
+     private lateinit var mListener:onItemClickListene
 
     interface onItemClickListene{
         fun onItemClick(position: Int)
@@ -26,12 +27,14 @@ class NewAdapter(private val newslist: ArrayList<News>, private val context: Con
     fun setOnclickListener(listener: onItemClickListene){
         mListener = listener
     }
+     */
+
 
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyviewHolder {
         val itemview = LayoutInflater.from(parent.context).inflate(R.layout.my_grid_view,parent,false)
-        return MyviewHolder(itemview,mListener)
+        return MyviewHolder(itemview)
     }
 
     override fun onBindViewHolder(holder: MyviewHolder, position: Int) {
@@ -49,7 +52,7 @@ class NewAdapter(private val newslist: ArrayList<News>, private val context: Con
         return newslist.size
     }
 
-    class MyviewHolder(itemview:View, listener:onItemClickListene):RecyclerView.ViewHolder(itemview){
+    class MyviewHolder(itemview:View):RecyclerView.ViewHolder(itemview){
         var titleimage:ImageView = itemview.findViewById(R.id.image)
         var tvheading:TextView = itemview.findViewById(R.id.titre)
 /*
