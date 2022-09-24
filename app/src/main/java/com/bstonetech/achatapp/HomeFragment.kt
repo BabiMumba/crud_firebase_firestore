@@ -1,5 +1,6 @@
 package com.bstonetech.achatapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -87,6 +88,11 @@ class HomeFragment : Fragment() {
         recyclerView.adapter = adapter
         adapter.setOnclickListener(object:NewAdapter.onItemClickListene{
             override fun onItemClick(position: Int) {
+                val intent = Intent(context,MainActivity::class.java)
+                intent.putExtra("titre",newsarrayList[position].heading)
+
+
+
 
             }
 
