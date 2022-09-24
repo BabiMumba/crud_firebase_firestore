@@ -30,7 +30,6 @@ class AchatActivity : AppCompatActivity() {
         bookAdapter = BookAdapter(applicationContext,arrayList!!)
         recyclerview?.adapter = bookAdapter
 
-
     }
     private fun setDataList():ArrayList<BookModel>{
         var items:ArrayList<BookModel> = ArrayList()
