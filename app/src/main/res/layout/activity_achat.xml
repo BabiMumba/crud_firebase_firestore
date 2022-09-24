@@ -11,7 +11,9 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        tools:listitem="@layout/my_grid_view"
+        tools:listitem="@layout/book_ui_item"
+        app:spanCount="3"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         android:layout_height="wrap_content"
         android:id="@+id/my_recler_view"
         />
