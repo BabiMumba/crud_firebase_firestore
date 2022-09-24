@@ -88,7 +88,7 @@ class HomeFragment : Fragment() {
         recyclerView.adapter = adapter
         adapter.setOnclickListener(object:NewAdapter.onItemClickListene{
             override fun onItemClick(position: Int) {
-                val intent = Intent(context,MainActivity::class.java)
+                val intent = Intent(context,NewsActivity::class.java)
                 intent.putExtra("titre",newsarrayList[position].heading)
                 intent.putExtra("news",news[position])
                 intent.putExtra("ImageId",newsarrayList[position].titleimage)
