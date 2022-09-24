@@ -27,7 +27,6 @@ class BookAdapter(var context: Context, var arrayList: ArrayList<BookModel>):  R
         holder.title.text = bookModel.titre
         holder.icone.setOnClickListener {
             if (position==0){
-
                 Toast.makeText(context, bookModel.titre.toString(), Toast.LENGTH_SHORT).show()
             }else{
                 Toast.makeText(context, bookModel.titre.toString(), Toast.LENGTH_SHORT).show()
