@@ -90,9 +90,9 @@ class HomeFragment : Fragment() {
             override fun onItemClick(position: Int) {
                 val intent = Intent(context,MainActivity::class.java)
                 intent.putExtra("titre",newsarrayList[position].heading)
-
-
-
+                intent.putExtra("news",news[position])
+                intent.putExtra("ImageId",newsarrayList[position].titleimage)
+                startActivity(intent)
 
             }
 
