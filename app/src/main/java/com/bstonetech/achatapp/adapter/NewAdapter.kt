@@ -38,6 +38,10 @@ class NewAdapter(private val newslist: ArrayList<News>, private val context: Con
         var currentitem = newslist[position]
         holder.titleimage.setImageResource(currentitem.titleimage)
         holder.tvheading.text = currentitem.heading
+        holder.itemView.setOnClickListener {
+
+            Toast.makeText(context, "position :$position", Toast.LENGTH_SHORT).show()
+        }
 
     }
 
@@ -48,10 +52,12 @@ class NewAdapter(private val newslist: ArrayList<News>, private val context: Con
     class MyviewHolder(itemview:View, listener:onItemClickListene):RecyclerView.ViewHolder(itemview){
         var titleimage:ImageView = itemview.findViewById(R.id.image)
         var tvheading:TextView = itemview.findViewById(R.id.titre)
-
-        init {
+/*
+  init {
             listener.onItemClick(adapterPosition)
         }
+
+ */
 
     }
 
