@@ -88,6 +88,7 @@ class HomeFragment : Fragment() {
         recyclerView.adapter = adapter
         adapter.setOnclickListener(object:NewAdapter.onItemClickListene{
             override fun onItemClick(position: Int) {
+
                 val intent = Intent(context,NewsActivity::class.java)
                 intent.putExtra("titre",newsarrayList[position].heading)
                 intent.putExtra("news",news[position])
@@ -115,6 +116,7 @@ class HomeFragment : Fragment() {
 
         )
         heading = arrayOf(
+
             getString(R.string.head_1),
             getString(R.string.head_2),
             getString(R.string.head_3),
@@ -140,7 +142,6 @@ class HomeFragment : Fragment() {
             getString(R.string.news_j),
 
         )
-
 
         for (i in imageId.indices){
             val news = News(imageId[i],heading[i])

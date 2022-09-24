@@ -38,10 +38,6 @@ class NewAdapter(private val newslist: ArrayList<News>, private val context: Con
         var currentitem = newslist[position]
         holder.titleimage.setImageResource(currentitem.titleimage)
         holder.tvheading.text = currentitem.heading
-        holder.itemView.setOnClickListener {
-
-            Toast.makeText(context, "position :$position", Toast.LENGTH_SHORT).show()
-        }
 
     }
 
@@ -56,9 +52,6 @@ class NewAdapter(private val newslist: ArrayList<News>, private val context: Con
         init {
             listener.onItemClick(adapterPosition)
         }
-
-
-
 
     }
 
