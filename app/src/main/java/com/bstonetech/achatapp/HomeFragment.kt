@@ -48,6 +48,7 @@ class HomeFragment : Fragment() {
         adapter = NewAdapter(newsarrayList,context )
         recyclerView.adapter = adapter
 
+
         /*
           adapter.setOnclickListener(object:NewAdapter.onItemClickListene{
 
@@ -58,9 +59,7 @@ class HomeFragment : Fragment() {
                 intent.putExtra("news",news[position])
                 intent.putExtra("ImageId",newsarrayList[position].titleimage)
                 startActivity(intent)
-
             }
-
         })
          */
 

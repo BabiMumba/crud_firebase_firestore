@@ -46,6 +46,7 @@ class NewAdapter(private val newslist: ArrayList<News>, private val context: Con
         holder.itemView.setOnClickListener {
 
             Toast.makeText(context, "position :$position", Toast.LENGTH_SHORT).show()
+
         }
 
     }
