@@ -18,44 +18,7 @@ import com.google.android.material.imageview.ShapeableImageView
 
 class NewAdapter(private val newslist: ArrayList<News>, private val context: Context?):RecyclerView.Adapter<NewAdapter.MyviewHolder>() {
 
-    private lateinit var adapter: NewAdapter
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var newsarrayList: ArrayList<News>
 
-    lateinit var imageId:Array<Int>
-    lateinit var heading:Array<String>
-    lateinit var news:Array<String>
-    private fun datainitialize(){
-
-        newsarrayList = arrayListOf<News>()
-        val url: String = Resources.getSystem().getString(R.string.head_1)
-
-        imageId = arrayOf(
-            R.drawable.a,
-            R.drawable.b,
-            )
-
-        heading = arrayOf(
-
-            Resources.getSystem().getString(R.string.head_1),
-            Resources.getSystem().getString(R.string.head_1),
-            Resources.getSystem().getString(R.string.head_1)
-
-
-
-            )
-        news = arrayOf(
-            Resources.getSystem().getString(R.string.news_a),
-            Resources.getSystem().getString(R.string.news_b),
-
-
-            )
-
-        for (i in imageId.indices){
-            val news = News(imageId[i],heading[i])
-            newsarrayList.add(news)
-        }
-    }
     /*
      private lateinit var mListener:onItemClickListene
 
