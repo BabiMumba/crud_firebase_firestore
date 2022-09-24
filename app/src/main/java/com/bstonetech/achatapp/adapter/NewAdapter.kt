@@ -2,6 +2,7 @@ package com.bstonetech.achatapp.adapter
 
 import android.app.Activity
 import android.content.Context
+import android.content.res.Resources
 import android.net.wifi.p2p.WifiP2pManager
 import android.view.LayoutInflater
 import android.view.View
@@ -27,32 +28,25 @@ class NewAdapter(private val newslist: ArrayList<News>, private val context: Con
     private fun datainitialize(){
 
         newsarrayList = arrayListOf<News>()
+        val url: String = Resources.getSystem().getString(R.string.head_1)
 
         imageId = arrayOf(
             R.drawable.a,
             R.drawable.b,
-            R.drawable.c,
-            R.drawable.d,
-            R.drawable.e,
-            R.drawable.f,
-            R.drawable.g,
-            R.drawable.h,
-            R.drawable.i,
-            R.drawable.j,
-
             )
 
         heading = arrayOf(
 
+            Resources.getSystem().getString(R.string.head_1),
+            Resources.getSystem().getString(R.string.head_1),
+            Resources.getSystem().getString(R.string.head_1)
 
-            getString(R.string.head_1),
-            getString(R.string.head_2),
 
 
             )
         news = arrayOf(
-            getString(R.string.news_a),
-            getString(R.string.news_b),
+            Resources.getSystem().getString(R.string.news_a),
+            Resources.getSystem().getString(R.string.news_b),
 
 
             )
