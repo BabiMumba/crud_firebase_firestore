@@ -1,4 +1,4 @@
-package com.bstonetech.achatapp
+package com.bstonetech.achatapp.mode_theme
 
 
 import androidx.appcompat.app.AppCompatActivity
@@ -19,7 +19,8 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
-import com.bstonetech.achatapp.mode_theme.DarkModePref
+import com.bstonetech.achatapp.BottomNavigationBehavior
+import com.bstonetech.achatapp.R
 
 @Suppress("DEPRECATION")
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -28,16 +29,16 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         BottomNavigationView.OnNavigationItemSelectedListener label@{ item: MenuItem ->
             var fragment: Fragment
             when (item.itemId) {
-                R.id.navigationMyProfile->{
+                R.id.navigationMyProfile ->{
                     Toast.makeText(this, "Ma profile", Toast.LENGTH_SHORT).show()
                 }
-                R.id.navigationMyCourses->{
+                R.id.navigationMyCourses ->{
                     Toast.makeText(this, "Mes course", Toast.LENGTH_SHORT).show()
                 }
-                R.id.navigationHome->{
+                R.id.navigationHome ->{
                     Toast.makeText(this, "Acceuille", Toast.LENGTH_SHORT).show()
                 }
-                R.id.navigationSearch->{
+                R.id.navigationSearch ->{
                     Toast.makeText(this, "Recherche", Toast.LENGTH_SHORT).show()
                 }
                 R.id.navigationMenu -> {
