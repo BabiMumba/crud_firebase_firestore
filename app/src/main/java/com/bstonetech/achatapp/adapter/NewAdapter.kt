@@ -1,9 +1,6 @@
 package com.bstonetech.achatapp.adapter
 
-import android.app.Activity
 import android.content.Context
-import android.content.res.Resources
-import android.net.wifi.p2p.WifiP2pManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,15 +8,16 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.bstonetech.achatapp.HomeFragment
 import com.bstonetech.achatapp.R
 import com.bstonetech.achatapp.model.News
-import com.google.android.material.imageview.ShapeableImageView
 
 class NewAdapter(private val newslist: ArrayList<News>, private val context: Context?):RecyclerView.Adapter<NewAdapter.MyviewHolder>() {
 
+    interface OnItemClickListener {
+        fun onItemClick(item: String?)
+    }
 
-    /*
+
      private lateinit var mListener:onItemClickListene
 
     interface onItemClickListene{
@@ -29,7 +27,7 @@ class NewAdapter(private val newslist: ArrayList<News>, private val context: Con
     fun setOnclickListener(listener: onItemClickListene){
         mListener = listener
     }
-     */
+
 
 
 
