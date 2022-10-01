@@ -19,7 +19,6 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
-import com.bstonetech.achatapp.BottomNavigationBehavior
 import com.bstonetech.achatapp.R
 
 @Suppress("DEPRECATION")
@@ -36,7 +35,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     Toast.makeText(this, "Mes course", Toast.LENGTH_SHORT).show()
                 }
                 R.id.navigationHome ->{
-                    Toast.makeText(this, "Acceuille", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Acceulle", Toast.LENGTH_SHORT).show()
                 }
                 R.id.navigationSearch ->{
                     Toast.makeText(this, "Recherche", Toast.LENGTH_SHORT).show()
@@ -111,6 +110,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     //create a seperate class file, if required in multiple activities
+
     fun setDarkMode(window: Window) {
         if (DarkModePref(this).isNightMode) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)

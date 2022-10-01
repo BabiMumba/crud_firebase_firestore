@@ -1,4 +1,4 @@
-package com.bstonetech.achatapp
+package com.bstonetech.achatapp.mode_theme
 
 import android.content.Context
 import android.util.AttributeSet
