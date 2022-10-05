@@ -19,7 +19,7 @@
 
             <TextView
                 style="@style/headerText"
-                android:text="Account Info"
+                android:text="Statistique de votre profil"
                 android:layout_marginBottom="20dp"/>
 
             <RelativeLayout style="@style/profileDetailsLayout">
@@ -44,20 +44,22 @@
 
             <View style="@style/proifleDetailsView" />
             <RelativeLayout style="@style/profileDetailsLayout">
+
                 <ImageView
-                    android:id="@+id/mobileImageView"
-                    android:src="@drawable/ic_mobile"
-                    style="@style/profileDetailsImage" />
 
+                    android:id="@+id/ic_premium"
+                    style="@style/profileDetailsImage"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/premium" />
                 <TextView
-                    android:text="Mobile"
-                    android:layout_toRightOf="@id/mobileImageView"
-                    style="@style/profileDetailsTextMain"/>
+                    android:id="@+id/tv_premium"
+                    android:text="Passer a Premium"
+                    style="@style/profileDetailsTextMain" />
+                <TextView
+                    android:layout_below="@id/tv_premium"
+                    android:text="Telechargement Illimite"
+                    style="@style/profileDetailsMiniText"/>
 
-                <TextView
-                    android:text="+91-8129999999"
-                    android:layout_toRightOf="@id/mobileImageView"
-                    style="@style/profileDetailsMiniText" />
 
             </RelativeLayout>
 
