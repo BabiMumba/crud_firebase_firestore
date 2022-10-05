@@ -97,28 +97,33 @@
 
             <View style="@style/proifleDetailsView" />
             <RelativeLayout style="@style/profileDetailsLayout">
+
                 <ImageView
-                    android:layout_alignParentEnd="true"
                     android:id="@+id/livre_image"
-                    android:src="@drawable/piece"
-                    style="@style/profileDetailsImage" />
+                    style="@style/profileDetailsImage"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_livre" />
 
                 <TextView
                     android:text="Livre"
                     style="@style/profileDetailsTextMain" />
 
                 <TextView
-                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_alignParentBottom="true"
                     android:text="Nombre de livre telechager" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="17sp"
                     android:layout_centerInParent="true"
-                    android:text="20" />
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
 
             </RelativeLayout>
 
