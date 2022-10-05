@@ -30,13 +30,18 @@
                     android:id="@+id/nameImageView"
                     android:src="@drawable/video"
                     style="@style/profileDetailsImage" />
+
                 <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
                     android:id="@+id/nameTextView"
-                    android:text="Regarder Une Video"
-                    style="@style/profileDetailsTextMain" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regarder Une Video" />
                 <TextView
                     android:layout_below="@id/nameTextView"
-                    android:text="Obtenez 10 points"
+                    android:text="Obtenez 20 points"
                     style="@style/profileDetailsMiniText"/>
 
 
@@ -66,61 +71,32 @@
             <View style="@style/proifleDetailsView" />
             <RelativeLayout style="@style/profileDetailsLayout">
                 <ImageView
+                    android:layout_alignParentEnd="true"
                     android:id="@+id/emailImageView"
-                    android:src="@drawable/ic_email"
-                    style="@style/profileDetailsImage" />
-
-                <TextView
-                    android:text="Email"
-                    android:layout_toRightOf="@id/emailImageView"
-                    style="@style/profileDetailsTextMain" />
-
-                <TextView
-                    android:text="developer@appsnipp.com"
-                    android:layout_toRightOf="@id/emailImageView"
-                    style="@style/profileDetailsMiniText" />
-
-            </RelativeLayout>
-
-            <View style="@style/proifleDetailsView" />
-            <RelativeLayout style="@style/profileDetailsLayout">
-                <ImageView
-                    android:id="@+id/addressImageView"
                     android:src="@drawable/piece"
                     style="@style/profileDetailsImage" />
 
                 <TextView
-                    android:text="Point Total"
-                    android:layout_toRightOf="@id/addressImageView"
+                    android:text="Point"
                     style="@style/profileDetailsTextMain" />
 
                 <TextView
-                    android:text="Avenue 2nd Street NW SY."
-                    android:layout_toRightOf="@id/addressImageView"
-                    style="@style/profileDetailsMiniText" />
-
-            </RelativeLayout>
-
-            <View style="@style/proifleDetailsView" />
-            <RelativeLayout style="@style/profileDetailsLayout">
-                <ImageView
-                    android:id="@+id/dobImageView"
-                    android:src="@drawable/ic_dob"
-                    style="@style/profileDetailsImage" />
+                    style="@style/profileDetailsMiniText"
+                    android:text="Nombre de point total" />
 
                 <TextView
-                    android:text="D.O.B"
-                    android:layout_toRightOf="@id/dobImageView"
-                    style="@style/profileDetailsTextMain" />
-
-                <TextView
-                    android:text="12-05-1990"
-                    android:layout_toRightOf="@id/dobImageView"
-                    style="@style/profileDetailsMiniText" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_centerInParent="true"
+                    android:text="20" />
 
             </RelativeLayout>
 
             <View style="@style/proifleDetailsView" />
 
         </LinearLayout>
+
 </androidx.core.widget.NestedScrollView>
