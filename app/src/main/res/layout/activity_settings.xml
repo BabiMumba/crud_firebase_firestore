@@ -49,9 +49,9 @@
 
             <ImageView
                 style="@style/viewParent"
-                android:src="@drawable/ic_more"
                 android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_more" />
 
         </RelativeLayout>
 
