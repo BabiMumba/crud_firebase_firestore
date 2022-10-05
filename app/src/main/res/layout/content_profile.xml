@@ -23,21 +23,22 @@
                 android:layout_marginBottom="20dp"/>
 
             <RelativeLayout style="@style/profileDetailsLayout">
-                <ImageView
-                    android:id="@+id/nameImageView"
-                    android:src="@drawable/ic_name"
-                    style="@style/profileDetailsImage" />
 
+                <ImageView
+
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/nameImageView"
+                    android:src="@drawable/video"
+                    style="@style/profileDetailsImage" />
                 <TextView
                     android:id="@+id/nameTextView"
-                    android:text="Name"
-                    android:layout_toRightOf="@id/nameImageView"
-                style="@style/profileDetailsTextMain" />
-
+                    android:text="Regarder Une Video"
+                    style="@style/profileDetailsTextMain" />
                 <TextView
-                    android:text="developer"
-                    android:layout_toRightOf="@id/nameImageView"
-                    style="@style/profileDetailsMiniText" />
+                    android:layout_below="@id/nameTextView"
+                    android:text="Obtenez 10 points"
+                    style="@style/profileDetailsMiniText"/>
+
 
             </RelativeLayout>
 
