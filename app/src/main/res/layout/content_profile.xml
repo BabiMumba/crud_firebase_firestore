@@ -109,12 +109,13 @@
                     style="@style/profileDetailsTextMain" />
 
                 <TextView
+                    android:layout_marginStart="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textSize="12sp"
                     android:layout_alignParentBottom="true"
-                    android:text="Nombre de livre telechager" />
+                    android:text="Nombre de livre telechager"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"

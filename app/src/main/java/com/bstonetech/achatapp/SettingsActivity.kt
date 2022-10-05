@@ -20,6 +20,7 @@ class SettingsActivity : AppCompatActivity() {
         }
         setContentView(R.layout.activity_settings)
         //function for enabling dark mode
+
         setDarkModeSwitch()
         var prof = findViewById<TextView>(R.id.prodile)
         val home = findViewById<TextView>(R.id.passe)
@@ -43,7 +44,7 @@ class SettingsActivity : AppCompatActivity() {
         }
         internet.setOnClickListener {
             Intent(this,
-                InternetDialogActivity::class.java).also {
+                NewsActivity::class.java).also {
                 startActivity(it)
             }
         }

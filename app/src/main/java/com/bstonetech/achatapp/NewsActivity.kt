@@ -2,15 +2,20 @@ package com.bstonetech.achatapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.TextView
+import android.view.View
+import androidx.appcompat.widget.Toolbar
+
 
 class NewsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_news)
+        setContentView(R.layout.activity_profile)
 
-        val heading_news:TextView = findViewById(R.id.titre_news)
+        val toolbar: Toolbar = findViewById<View>(R.id.toolbar) as Toolbar
+        setSupportActionBar(toolbar)
+
+/*
+   val heading_news:TextView = findViewById(R.id.titre_news)
         val image_news:ImageView = findViewById(R.id.image_id)
         val news:TextView = findViewById(R.id.news)
 
@@ -24,6 +29,8 @@ class NewsActivity : AppCompatActivity() {
         news.text = news_tv
         image_news.setImageResource(imageId)
 
+
+ */
 
 
 
