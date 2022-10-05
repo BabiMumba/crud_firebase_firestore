@@ -70,8 +70,8 @@
                             android:background="@drawable/profile_bk"/>
 
                         <TextView
-                            android:text="Back to\nHome"
-                            style="@style/profileStyledBackButton" />
+                            style="@style/profileStyledBackButton"
+                            android:text="page D'accueil" />
                     </RelativeLayout>
 
                 </LinearLayout>

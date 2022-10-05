@@ -83,11 +83,11 @@
             <RelativeLayout style="@style/profileDetailsLayout">
                 <ImageView
                     android:id="@+id/addressImageView"
-                    android:src="@drawable/ic_address"
+                    android:src="@drawable/piece"
                     style="@style/profileDetailsImage" />
 
                 <TextView
-                    android:text="Address"
+                    android:text="Point Total"
                     android:layout_toRightOf="@id/addressImageView"
                     style="@style/profileDetailsTextMain" />
 
